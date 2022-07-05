@@ -32,7 +32,10 @@
         height: 320px !important; // just to override Image component inline height
         padding-top: 3px;
         background-size: cover;
+        background-position: center;
         border-radius: 5px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
       }
     }
 

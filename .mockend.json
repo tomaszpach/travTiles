@@ -2,7 +2,7 @@
   "City": {
     "title": { "string": {} },
     "imageURL": {
-      "string": ["https://picsum.photos/600/300"]
+      "string": ["https://picsum.photos/3200/1800"]
     },
     "days": { "int": { "min": 1, "max": 15 } },
     "countryCount": { "int": { "min": 1, "max": 7 } },
