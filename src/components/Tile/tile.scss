@@ -24,6 +24,8 @@
   .tile {
     border: 1px solid #acacac4d;
     border-radius: 5px;
+    //position: sticky; // uncomment that part to see 'sticky' tiles version [1]
+    //top: 63px; // uncomment that part to see 'sticky' tiles version [1]
 
     .image-wrapper {
       height: 320px;
@@ -34,13 +36,15 @@
         background-size: cover;
         background-position: center;
         border-radius: 5px;
-        background-attachment: fixed;
         background-repeat: no-repeat;
+        //background-attachment: fixed; // uncomment that part to see 'parallax' version [2]
       }
     }
 
     .content {
       padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
 
       h2 {
         margin-top: 0;

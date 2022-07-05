@@ -15,6 +15,14 @@ This project is using:
 
 Colours, fonts, paddings and some minor details might be different from than design
 
+## Different variables
+If you would like to see two other options how tiles can behave please go to 'tiles.scss' and search for 'version' then uncomment part that you want to check
+Version:
+1. Adding sticky prop to tiles to overlap on scroll
+2. Adding 'parallax' effect to tile background image
+
+Both versions can be enabled at same time
+
 ## Available Scripts
 
 In the project directory, you can run:
