@@ -13,7 +13,7 @@ function App() {
   const fetchData = async () => {
     setLoading(true);
     const response = await fetch(
-      "https://mockend.com/tomaszpach/trav/city?limit=50"
+      "https://mockend.com/tomaszpach/travTiles/city?limit=50"
     );
     if (!response.ok) {
       setLoading(false);
