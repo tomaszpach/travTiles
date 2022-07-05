@@ -8,8 +8,6 @@ const TileImage = ({ id, imageURL, tripName }) => {
       wrapperClassName="image-wrapper"
       alt={tripName}
       src={`${imageURL}?random=${id}`}
-      width="100px"
-      height="50px"
       isResponsive
       lazyLoad
     />
