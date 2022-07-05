@@ -1,0 +1,125 @@
+@import "../../styles/breakpoints";
+
+.tiles {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas: ".";
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: ". .";
+  }
+
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: ". . .";
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: ". . . .";
+  }
+
+  @include xl {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: ". . . . .";
+  }
+
+  .tile {
+    border: 1px solid #acacac4d;
+    border-radius: 5px;
+
+    .image-wrapper {
+      height: 50%;
+
+      div {
+        border-radius: 5px;
+      }
+    }
+
+    .content {
+      padding: 10px;
+
+      h2 {
+        margin-top: 0;
+      }
+
+      .trip-details {
+        color: #acacac;
+        font-weight: bold;
+        font-size: 12px;
+        padding-bottom: 5px;
+      }
+
+      .stars {
+        margin-bottom: 10px;
+
+        .rating {
+          display: inline-block;
+          unicode-bidi: bidi-override;
+          color: #acacac;
+          font-size: 20px;
+          width: auto;
+          margin: 0;
+          position: relative;
+          padding: 0;
+        }
+
+        .rating-upper {
+          color: #fffe6e;
+          padding: 0;
+          position: absolute;
+          z-index: 1;
+          display: flex;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+        }
+
+        .rating-lower {
+          padding: 0;
+          display: flex;
+          z-index: 0;
+        }
+
+        .rating-value {
+          color: #000;
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          right: -50px;
+        }
+      }
+
+      .price {
+        .new {
+          font-weight: bold;
+          margin-right: 10px;
+        }
+
+        .old {
+          color: #acacac;
+          text-decoration: line-through;
+        }
+
+        .dot {
+          height: 5px;
+          width: 5px;
+          background-color: #acacac;
+          border-radius: 50%;
+          display: inline-block;
+          margin-bottom: 2px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
